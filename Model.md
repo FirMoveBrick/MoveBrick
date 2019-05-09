@@ -1,7 +1,7 @@
 phpstorm的cmd指令
 
     php think make:model index/User（通过命令行方式创建模型——一定要在文件根目录下创建）
-
+    SndVol 打开音量调节器
     
 模型的CURD操作
     
