@@ -8,7 +8,7 @@ phpstorm的cmd指令
     CURD既数据的增删改查。在TP中提供的模型基类有以下方法
         增（add、addAll）
         删（delete）
-        改（save）
+        改（save）     
         查（find[取出一条数据，返回一维数组]、select[取出多条数据，返回二 维数组]）   
     连贯方式
         where(),
@@ -60,6 +60,15 @@ TP5模型关联
         
 
     二、一对多关联：HAS_MANY	以及相对的	BELONGS_TO 
+    
+        hasMany 的参数如下：
+        hasMany('关联模型名','关联外键','关联模型主键','别名定义')
+        
+        public function books()
+            {
+                return $this->hasMany('Book');
+            }
+        
     三、多对多关联：BELONGS_TO_MANY
 
     
