@@ -1,7 +1,7 @@
-phpstorm的cmd指令
+#### phpstorm的cmd指令
 
-    php think make:model index/User（通过命令行方式创建模型——一定要在文件根目录下创建）
-    SndVol 打开音量调节器
+    * php think make:model index/User（通过命令行方式创建模型——一定要在文件根目录下创建）
+    * SndVol 打开音量调节器
     
 模型的CURD操作
     
@@ -68,7 +68,7 @@ TP5模型关联
             {
                 return $this->hasMany('Book');
             }
-            
+              
         关联添加： 也可以批量增加数据
         关联查询： 可以直接调用模型的属性获取全部关联数据
         使用预载入查询来提高查询性能，对于一对一关联来说，只需要进行一次查 询即可获取关联对象数据
@@ -77,13 +77,13 @@ TP5模型关联
              
              public function read()
              {
-             $user = UserModel::get(1);
-             // 获取状态为1的关联数据
-             $books = $user->books()->where('status',1)->select();
-             dump($books);
-             // 获取作者写的某本书
-             $book = $user->books()->getByTitle('ThinkPHP5快速入门');
-             dump($book);
+                $user = UserModel::get(1);
+                // 获取状态为1的关联数据
+                $books = $user->books()->where('status',1)->select();
+                dump($books);
+                // 获取作者写的某本书
+                $book = $user->books()->getByTitle('ThinkPHP5快速入门');
+                dump($book);
              }
              
         关联更新：
@@ -98,20 +98,13 @@ TP5模型关联
             
         关联删除：
             删除部分关联数据：
-            public function delete($id){
-            $user = UserModel::get($id);
-            // 删除部分关联数据
-            $book = $user->books()->getByTitle('ThinkPHP5开发手册');
-            $book->delete();
-            }
+                $book = $user->books()->getByTitle('ThinkPHP5开发手册');
+                $book->delete();
             删除所有的关联数据：
-            public function delete($id){
-            $user = UserModel::get($id);
-            if($user->delete()){
-            // 删除所有的关联数据
-            $user->books()->delete();
-            }
-            }
+                if($user->delete()){
+                // 删除所有的关联数据
+                $user->books()->delete();
+                }
     三、多对多关联：BELONGS_TO_MANY
     
 模型输出
