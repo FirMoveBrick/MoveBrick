@@ -68,8 +68,102 @@ TP5模型关联
             {
                 return $this->hasMany('Book');
             }
+            
+        关联添加： 也可以批量增加数据
+        关联查询： 可以直接调用模型的属性获取全部关联数据
+        使用预载入查询来提高查询性能，对于一对一关联来说，只需要进行一次查 询即可获取关联对象数据
+             $user	=	UserModel::get($id,'**profile**');
+             //    get方法使用第二个参数（关联模型方法名）就表示进行关联预载入查询。
+             
+             public function read()
+             {
+             $user = UserModel::get(1);
+             // 获取状态为1的关联数据
+             $books = $user->books()->where('status',1)->select();
+             dump($books);
+             // 获取作者写的某本书
+             $book = $user->books()->getByTitle('ThinkPHP5快速入门');
+             dump($book);
+             }
+             
+        关联更新：
         
+            public function update($id)
+            {
+            $user = UserModel::get($id);
+            $book = $user->books()->getByTitle('ThinkPHP5开发手册');
+            $book->title = 'ThinkPHP5快速入门';
+            $book->save();
+            }
+            
+        关联删除：
+            删除部分关联数据：
+            public function delete($id){
+            $user = UserModel::get($id);
+            // 删除部分关联数据
+            $book = $user->books()->getByTitle('ThinkPHP5开发手册');
+            $book->delete();
+            }
+            删除所有的关联数据：
+            public function delete($id){
+            $user = UserModel::get($id);
+            if($user->delete()){
+            // 删除所有的关联数据
+            $user->books()->delete();
+            }
+            }
     三、多对多关联：BELONGS_TO_MANY
+    
+模型输出
+
+    一、输出数组
+        可以使用toArray 方法把当前的模型对象输出为数组。
+            //模型对象->方法
+            $user->toArray()
+    二、隐藏属性
+        hidden方法在输出的时候隐藏某些属性
+            //模型名->方法（[字段名称，字段名称，***]）
+            $user->hidden(['create_time','update_time'])->toArray()
+    三、指定属性
+        visible方法指定一些属性输出
+            //模型名->方法（[字段名称，字段名称，***]）
+            $user->visible(['id','nickname','email'])->toArray()
+    四、追加属性
+        如果读取器定义了一些非数据库字段的读取，例如：
+        <?php
+        namespace app\index\model;
+        use think\Model;
+        class User extends Model
+        {
+            // status修改器
+            protected function getUserStatusAttr($value)
+            {
+            $status = [-1 => '删除', 0 => '禁用', 1 => '正常', 2 => '待审核'];
+            return $status[$value];
+            }
+        }
+        如果需要输出（字段名称） 属性数据的话，可以使用append 方法
+        $user->append(['user_status'])->toArray()
+    五、输出json
+        对于API 开发而言，经常需要返回JSON 格式的数据
+         //模型名->方法（）
+         $user->toJson()
+         
+    模型例子：
+    // 读取用户数据并输出数组
+    public function read($id = '')
+    {
+    //获取指定ID属性
+    $user = UserModel::get($id);
+    //输出数组
+    dump($user->toArray());
+    //隐藏属性
+    dump($user->hidden(['create_time','update_time'])->toArray());
+    //指定属性
+    dump($user->visible(['id','nickname','email'])->toArray());
+    //输出json
+    echo $user->toJson();
+    }
 
     
         
