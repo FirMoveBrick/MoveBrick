@@ -68,6 +68,7 @@ TP5模型关联
             {
                 return $this->hasMany('Book');
             }
+            
         
     三、多对多关联：BELONGS_TO_MANY
 
