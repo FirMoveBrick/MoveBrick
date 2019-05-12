@@ -37,19 +37,19 @@ belongsTo 方法和 hasOne 一样，也有5个参数：
     > belongsTo('关联模型名','关联外键','关联模型主键','别名定义','join类型')
             
 * 模型关联方法 
-```php
-//	定义关联方法,在Model下定义
-public function profile()
- {
-    //用户HASONE档案关联
-    return $this->hasOne('Profile');
- }
-public function user()
- {								
-    //档案BELONGSTO关联操作都基于profile方法时，直接使用
-    return $this->belongsTo('User');				
- } 
-```
+    ```php
+    //	定义关联方法,在Model下定义
+    public function profile()
+    {
+        //用户HASONE档案关联
+        return $this->hasOne('Profile');
+    }
+    public function user()
+    {								
+        //档案BELONGSTO关联操作都基于profile方法时，直接使用
+        return $this->belongsTo('User');				
+    } 
+    ```
 1. 关联添加： 
 2. 关联查询： 一对一的关联查询很简单，直接把关联对象当成属性来用即可
     >使用预载入查询来提高查询性能，对于一对一关联来说，只需要进行一次查 询即可获取关联对象数据。get方法使用第二个参数（关联模型方法名）就表示进行关联预载入查询    
@@ -61,30 +61,30 @@ public function user()
     
 * hasMany 的参数如下：
     > hasMany('关联模型名','关联外键','关联模型主键','别名定义')
-```php
-public function books()
+    ```php
+    public function books()
     {
         return $this->hasMany('Book');
     }
-```        
+    ```        
         
               
 1. 关联添加： 也可以批量增加数据
 2. 关联查询： 可以直接调用模型的属性获取全部关联数据
-```php
-public function read()
-     {
-        $user = UserModel::get(1);
-        // 获取状态为1的关联数据
-        $books = $user->books()->where('status',1)->select();
-        dump($books);
-        // 获取作者写的某本书
-        $book = $user->books()->getByTitle('ThinkPHP5快速入门');
-        dump($book);
-     }
-```     
+    ```php
+    public function read()
+    {
+       $user = UserModel::get(1);
+       // 获取状态为1的关联数据
+       $books = $user->books()->where('status',1)->select();
+       dump($books);
+       // 获取作者写的某本书
+       $book = $user->books()->getByTitle('ThinkPHP5快速入门');
+       dump($book);
+    }
+    ```     
 3. 关联更新：
-```php
+    ```php
     public function update($id)
     {
     $user = UserModel::get($id);
@@ -92,11 +92,11 @@ public function read()
     $book->title = 'ThinkPHP5快速入门';
     $book->save();
     }
-```
+    ```
 
     
 4. 关联删除：
-```php
+    ```php
     //删除部分关联数据：
     $book = $user->books()->getByTitle('ThinkPHP5开发手册');
     $book->delete();
@@ -105,7 +105,7 @@ public function read()
     // 删除所有的关联数据
     $user->books()->delete();
     }
-```
+    ```
     
 ####3. 多对多关联：BELONGS_TO_MANY
     
