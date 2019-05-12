@@ -137,11 +137,6 @@ belongsTo 方法和 hasOne 一样，也有5个参数：
             $status = [-1 => '删除', 0 => '禁用', 1 => '正常', 2 => '待审核'];
             return $status[$value];
             }
-<<<<<<< HEAD
-            
-        
-    三、多对多关联：BELONGS_TO_MANY
-=======
         }
     ```
     >如果需要输出（字段名称） 属性数据的话，可以使用append 方法
