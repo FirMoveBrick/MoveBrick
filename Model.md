@@ -109,6 +109,47 @@ belongsTo 方法和 hasOne 一样，也有5个参数：
     
 ####3. 多对多关联：BELONGS_TO_MANY
     
+* 一个用户会有多个角色，同时一个角色也会包含多个用户，这就是一个典型的多对多关联
+* 多对多关联通常一定会有一个中间表，也称为枢纽表，所以需要创建一个用户角色的中间表
+    > belongsToMany 的参数如下
+    
+    `belongsToMany('关联模型名','中间表名称','关联外键','关联模型主键','别名定义')`
+    
+    > 给模型添加多对多关联方法定义
+    ```php
+    // 定义多对多关联
+    public function roles()
+    {
+    // 用户 BELONGS_TO_MANY 角色
+    return $this->belongsToMany('Role', 'think_access');
+    }
+    ```
+    > 对于枢纽表并不需要创建模型类，在多对多关联关系中，并不需要直接操作枢纽表。
+    
+1. 关联新增
+    > 新增用户角色 并自动写入枢纽表
+    
+    `$user->roles()->save(['name' => 'editor', 'title' => '编辑']);`
+    > 批量新增
+       
+    ```php
+    $user->roles()->saveAll([
+    ['name' => 'leader', 'title' => '领导'],
+    ['name' => 'admin', 'title' => '管理员'],
+    ]);
+    ```
+    > 由于该角色已经存在了，所以只需要使用attach 方法增加枢纽表的关联数据：
+    
+    `$user->roles()->attach($role);`
+2. 关联删除
+    > 使用detach 方法删除关联的枢纽表数据，但不会删除关联模型数据
+    
+    `$user->roles()->detach($role);`
+    > 删除枢纽表的同时删除关联模型
+    
+    `$user->roles()->detach($role,true);`
+3.关联查询  
+
 ## 模型输出
 
 1. 输出数组: toArray 方法把模型对象输出为数组。
