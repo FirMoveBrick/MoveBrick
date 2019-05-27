@@ -4,10 +4,11 @@
 - 翻墙软件（Shadowsocks）
 - 快捷键t快速搜索文件
 ### 命令行操作git
-####基本信息设置
+#### 基本信息设置
 1.	设置用户名
-
+    
 `git config –global user.name ‘FirMoveBrick’`
+
 2.	设置用户名邮箱
 
 `it config –global user.email ‘********@qq.com’`
