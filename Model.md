@@ -169,9 +169,6 @@ belongsTo 方法和 hasOne 一样，也有5个参数：
 4. 追加属性
     > 如果读取器定义了一些非数据库字段的读取，例如：
     ```php
-    <?php
-        namespace app\index\model;
-        use think\Model;
         class User extends Model
         {
             // status修改器
@@ -180,22 +177,18 @@ belongsTo 方法和 hasOne 一样，也有5个参数：
             $status = [-1 => '删除', 0 => '禁用', 1 => '正常', 2 => '待审核'];
             return $status[$value];
             }
-<<<<<<< HEAD
-            
-        
-    三、多对多关联：BELONGS_TO_MANY
-=======
-        }
-    ```
-    >如果需要输出（字段名称） 属性数据的话，可以使用append 方法
+        }   
+     ```     
+   >如果需要输出（字段名称） 属性数据的话，可以使用append 方法
+   
+        `$user->append(['user_status'])->toArray()`
     
-    `$user->append(['user_status'])->toArray()`
 5. 输出json:对于API 开发而言，经常需要返回JSON 格式的数据    
      > //模型名->方法（）
      
      `$user->toJson()`
          
-* 模型输出例子：
+- 模型输出例子：
     ```php
     // 读取用户数据并输出数组
     public function read($id = '')
@@ -212,7 +205,73 @@ belongsTo 方法和 hasOne 一样，也有5个参数：
     echo $user->toJson();
     ```
     
->>>>>>> 98a409581aeae4aafe176784112c9a87aa048a56
+---
+
+## 读取器和修改器
+#### 读取器
+- 读取器方法的命名规范是：
+    > get + 属性名的驼峰命名+ Attr
+- 给模型添加读取器的定义方法,读取器方法用于读取User模型的birthday属性的值，该方法会在读取birthday属性值的时候自动执行。
+    ```php
+    class User extends Model
+    {
+        // birthday读取器
+        protected function getBirthdayAttr($birthday)
+        {
+            return date('Y-m-d', $birthday);
+        }
+    }
+    ```
+- 读取器方法使用了第二个参数，表示传入所有的属性数据
+#### 修改器
+- 修改器方法的命名规范是：
+    > set + 属性名的驼峰命名+ Attr
+- 给模型添加读取器的定义方法
+    ```php
+      // birthday修改器
+      protected function setBirthdayAttr($value)
+      {
+          return strtotime($value);
+      }
+    ```
+---
+    
+## 类型转换和自动完成
+#### 类型转换
+
+| ThinkPHP5.0 支持的转换类型包括： | 类型 |
+| -------                    | :---:|
+|   integer         | 整型 |
+|  float | 浮点型|
+|  boolean | 布尔型|
+|  array | 数组|
+|  json | JSON类型|
+|  object | 对象|
+|  datetime | 日期时间 |
+|  timestamp | 时间戳（整形）|
+|  serialize | 序列化 |
+> 对于简单的数据格式转换之类的处理，设置类型转换比定义修改器和读取器更加方便。
+- User 模型类中添加定义
+
+    ```php
+    class User extends Model
+    {
+      protected $dateFormat = 'Y/m/d';
+      protected $type = [
+      // 设置birthday为时间戳类型（整型）
+      'birthday' => 'timestamp',
+      ];
+    }
+    ```
+    > 对于timestamp 和datetime 类型，如果不设置模型的dateFormat 属性，默认的日期显示格式为：
+      Y-m-d H:i:s
+
+#### 自动完成
+
+
+
+
+
 
     
         
