@@ -57,7 +57,7 @@
         - DFD建模方法
             1. **数据流图（Data Flow Diagram，DFD）**，DFD的核心是数据流，以**图形**方法来表示
                 > DFD图的基本符号
-                [avatar](img/1.png)
+                ![avr](img/1.png)
     - 面向对象分析与建模方法（OOAD）
         > UML用例建模
 3. 巴拉巴拉
