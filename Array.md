@@ -11,8 +11,8 @@
     | index_key | 可选。作为返回数组的索引/键的列。|
     ```php
     $data1 = [
-                ['route_dy_id'=>12345611,'describes'=>'假假按揭','create_time'=>1345234532],
-                ['route_dy_id'=>123456,'describes'=>'假假法人三个人','create_time'=>1345234545],
-            ];
+           ['route_dy_id'=>12345611,'describes'=>'假假按揭','create_time'=>1345234532],
+        ['route_dy_id'=>123456,'describes'=>'假假法人三个人','create_time'=>1345234545],
+    ];
     $arr = array_column($data1,'route_dy_id');
     ```
