@@ -16,3 +16,12 @@
     ];
     $arr = array_column($data1,'route_dy_id');
     ```
+    
+- substr(string,start,length)
+    > substr() 函数返回字符串的一部分。
+    
+    | 参数     |  描述   |
+        |       ---|  :---    |
+        | string | 必需。规定要返回其中一部分的字符串。 |
+        | column_key | 必需。规定在字符串的何处开始 |
+        | start | 可选。规定被返回字符串的长度。默认是直到字符串的结尾。|
