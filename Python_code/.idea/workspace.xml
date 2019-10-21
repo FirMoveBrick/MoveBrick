@@ -40,8 +40,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.计算阶乘">
-    <configuration name="计算一元二次方程的根" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="列表遍历" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -49,34 +49,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chapter3/3.2 选择结构" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chapter4/4.1 列表" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chapter3/3.2 选择结构/计算一元二次方程的根.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="简单的计算器" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chapter3/3.2 选择结构" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chapter3/3.2 选择结构/简单的计算器.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chapter4/4.1 列表/列表遍历.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_9" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="创建扑克牌" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,12 +93,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chapter2/习题" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chapter3/3.3 循环结构" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chapter2/习题/test_9.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chapter3/3.3 循环结构/创建扑克牌.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="unit4_8" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,12 +115,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="//110.64.211.77/大二下学期的课程/大三/py/第3次课/unit4" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chapter4/4.1 列表" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="//110.64.211.77/大二下学期的课程/大三/py/第3次课/unit4/unit4_8.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chapter4/4.1 列表/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chapter3/习题" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chapter3/习题/test1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.列表遍历" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.创建扑克牌" />
         <item itemvalue="Python.计算阶乘" />
-        <item itemvalue="Python.简单的计算器" />
-        <item itemvalue="Python.计算一元二次方程的根" />
-        <item itemvalue="Python.test_9" />
-        <item itemvalue="Python.unit4_8" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +174,7 @@
       <workItem from="1570452989423" duration="266000" />
       <workItem from="1570534737964" duration="995000" />
       <workItem from="1571384331956" duration="4000" />
-      <workItem from="1571384484816" duration="36800000" />
+      <workItem from="1571384484816" duration="45791000" />
     </task>
     <servers />
   </component>
@@ -185,11 +185,12 @@
     <SUITE FILE_PATH="coverage/Python_code$str_data_type.coverage" NAME="str_data_type Coverage Results" MODIFIED="1571402837657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter2/2.1 基本数据类型" />
     <SUITE FILE_PATH="coverage/Python_code$data_type.coverage" NAME="data_type Coverage Results" MODIFIED="1571388369743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter2/2.1 基本数据类型" />
     <SUITE FILE_PATH="coverage/Python_code$unit4_8.coverage" NAME="unit4_8 Coverage Results" MODIFIED="1571557232335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="//110.64.211.77/大二下学期的课程/大三/py/第3次课/unit4" />
+    <SUITE FILE_PATH="coverage/Python_code$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1571624655878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter3/习题" />
     <SUITE FILE_PATH="coverage/Python_code$format.coverage" NAME="format函数运用 Coverage Results" MODIFIED="1571477107126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter2/2.2 运算符和表达式" />
     <SUITE FILE_PATH="coverage/Python_code$test_8.coverage" NAME="test_8 Coverage Results" MODIFIED="1571552477510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter2/习题" />
-    <SUITE FILE_PATH="coverage/Python_code$.coverage" NAME="计算阶乘 Coverage Results" MODIFIED="1571570388969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter3/3.3 循环结构" />
+    <SUITE FILE_PATH="coverage/Python_code$.coverage" NAME="列表遍历 Coverage Results" MODIFIED="1571634920776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter4/4.1 列表" />
     <SUITE FILE_PATH="coverage/Python_code$Find_information.coverage" NAME="Find_information Coverage Results" MODIFIED="1571446691400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter2/2.1 基本数据类型" />
-    <SUITE FILE_PATH="coverage/Python_code$test.coverage" NAME="test Coverage Results" MODIFIED="1571549525377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter2/习题" />
+    <SUITE FILE_PATH="coverage/Python_code$test.coverage" NAME="test Coverage Results" MODIFIED="1571636185540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter4/4.1 列表" />
     <SUITE FILE_PATH="coverage/Python_code$Hello_World__1_.coverage" NAME="Hello_World (1) Coverage Results" MODIFIED="1571388380875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter1" />
     <SUITE FILE_PATH="coverage/Python_code$test_9.coverage" NAME="test_9 Coverage Results" MODIFIED="1571559917116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter2/习题" />
     <SUITE FILE_PATH="coverage/Python_code$Hello_World.coverage" NAME="Hello_World Coverage Results" MODIFIED="1571455406041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/chapter1" />
