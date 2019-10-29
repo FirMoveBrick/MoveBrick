@@ -8,12 +8,10 @@ listLen = len(mylist)
 for i in range(listLen):
     print(i, end=' ')
 print()
-
 # 3. item迭代器
 for item in iter(mylist):
     print(item, end=' ')
 print()
-
 # 4. enumerate函数
 for item in enumerate(mylist):
     print(item, end=' ')
