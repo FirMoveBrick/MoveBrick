@@ -39,3 +39,4 @@ def setQuestion():
         pkFile.close()
         return formular
 def answerQuestion(formular):
+    pass
