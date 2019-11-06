@@ -1,5 +1,6 @@
 # -*- coding:UTF-8 -*-
 import requests, json, time, sys
+import urllib3
 from contextlib import closing
 
 
@@ -60,6 +61,7 @@ class get_photos(object):
 
 if __name__ == '__main__':
     gp = get_photos()
+    urllib3.disable_warnings()
     print('获取图片连接中:')
     gp.get_ids()
     print('图片下载中:')
