@@ -3,7 +3,7 @@ import urllib.parse
 from bs4 import BeautifulSoup  # 导入网页解析模块
 
 
-## 定义图片下载类
+# 定义图片下载类
 class ImageDownload(object):
     def __init__(self, urlList):  # 定义构造方法
         self.urllist = urlList  # 把网页地址列表保存到实例变量中
