@@ -58,7 +58,7 @@ class get_photos(object):
                         f.write(chunk)
                         f.flush()
 
-
+# 下载
 if __name__ == '__main__':
     gp = get_photos()
     urllib3.disable_warnings()
